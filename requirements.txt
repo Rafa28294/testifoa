@@ -2,7 +2,7 @@ streamlit
 pandas
 numpy
 matplotlib
-seabron
+seaborn
 joblib
 scikit-learn
 openpyxl
