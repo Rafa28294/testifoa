@@ -1,4 +1,12 @@
 import streamlit as st
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+import joblib
+import io
+
+@st.cache_data
 
 def convert_to_excel(df2):
     output = io.BytesIO()
@@ -45,6 +53,7 @@ def fig4(df1):
 
 
 def main():
+
     st.set_page_config(page_title='Analisi', layout='wide')
     st.title("Analisi Dati")
 
@@ -138,3 +147,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+
